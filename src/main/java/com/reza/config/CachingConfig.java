@@ -13,11 +13,11 @@ import java.util.concurrent.TimeUnit;
 @EnableCaching
 public class CachingConfig {
 
-    private static String ARTIST_CACHE_NAME = "artists";
+    private static String FRUIT_CACHE_NAME = "fruits";
 
     @Bean
     public Cache cacheArtists() {
-        return new GuavaCache(ARTIST_CACHE_NAME, CacheBuilder.newBuilder()
+        return new GuavaCache(FRUIT_CACHE_NAME, CacheBuilder.newBuilder()
                 .expireAfterWrite(1, TimeUnit.DAYS)
                 .build());
     }
