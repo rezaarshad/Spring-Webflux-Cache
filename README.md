@@ -1,4 +1,4 @@
- # REST API - Artist Information
+ # REST API
  
  
  ## Used Technologies and frameworks
