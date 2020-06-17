@@ -29,7 +29,7 @@ public class FruitService {
 
     //fetch data from db
     private Mono<Fruit> fetch(final Long id) {
-        //todo add to db
+        //todo read from db
         return Mono.just(new Fruit(id, id.toString()));
     }
 
