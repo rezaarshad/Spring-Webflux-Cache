@@ -1,5 +1,5 @@
  # REST API
-The spring cache APIs are still blocking which is not good and our system will not be fully reactive if we are using WebFLux. But there is hack-way using an reactor [cache add-on](https://github.com/reactor/reactor-addons/tree/master/reactor-extra/src/main/java/reactor/cache) which can be used with Spring CacheManager. So until this blocking cache issue is solved we can use this add-on.
+The spring cache APIs are still blocking and our system will not be fully reactive if we are using WebFLux with cache APIs. But there is hack-way using an reactor [cache add-on](https://github.com/reactor/reactor-addons/tree/master/reactor-extra/src/main/java/reactor/cache) which can be used with Spring CacheManager. So until this blocking cache issue is solved we can use this add-on.
  
  ## Used Technologies and frameworks
  * Java 11
